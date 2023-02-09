@@ -12,6 +12,7 @@ res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Ty
 next(err);
 });
 app.get("/test",(req,res)=>{
+    console.log("hi")
    return res.json({status:200,msg:"successfully created "})
 })
 server.listen(3000, function () {
